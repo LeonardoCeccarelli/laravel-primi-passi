@@ -26,26 +26,42 @@ Route::get('/', function () {
         "listNavLink" => [
             [
                 "title" => "Home",
-                "link" => "#"
+                "link" => "homePage"
             ],
             [
                 "title" => "Area clienti",
-                "link" => "#"
+                "link" => "clientPage"
             ],
             [
                 "title" => "Shop",
-                "link" => "#"
+                "link" => "shopPage"
             ],
             [
                 "title" => "Chi siamo",
-                "link" => "#"
+                "link" => "aboutUsPage"
             ],
             [
                 "title" => "Contatti",
-                "link" => "#"
+                "link" => "contactsPage"
             ],
         ]
     ];
 
     return view("home", $data);
-});
+})->name("homePage");
+
+Route::get('/client', function () {
+    return view("client");
+})->name("clientPage");
+
+Route::get('/shop', function () {
+    return view("shop");
+})->name("shopPage");
+
+Route::get('/about_us', function () {
+    return view("about_us");
+})->name("aboutUsPage");
+
+Route::get('/contacts', function () {
+    return view("contacts");
+})->name("contactsPage");
