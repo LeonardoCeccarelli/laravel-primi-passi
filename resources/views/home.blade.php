@@ -88,7 +88,7 @@
             <ul>
                 @foreach($listNavLink as $navLink)
                     <li>
-                        <a href="{{ route($navLink['link']) }}">{{ $navLink["title"] }}</a>
+                        <a href="{{ route($navLink['link']) }}" target="_blank">{{ $navLink["title"] }}</a>
                     </li>
                 @endforeach
             </ul>
