@@ -22,6 +22,28 @@ Route::get('/', function () {
             "Iron-Man",
             "Hulk",
             "Captain America"
+        ],
+        "listNavLink" => [
+            [
+                "title" => "Home",
+                "link" => "#"
+            ],
+            [
+                "title" => "Area clienti",
+                "link" => "#"
+            ],
+            [
+                "title" => "Shop",
+                "link" => "#"
+            ],
+            [
+                "title" => "Chi siamo",
+                "link" => "#"
+            ],
+            [
+                "title" => "Contatti",
+                "link" => "#"
+            ],
         ]
     ];
 

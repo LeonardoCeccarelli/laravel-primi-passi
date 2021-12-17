@@ -7,14 +7,25 @@
     <title>Home Page</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    @if(count($heroesList))
-    <h3>{{ $name }} {{ $surname }}</h3>
-    <ul>
-        @foreach($heroesList as $hero)
-            <li>{{ $hero }}</li>
-        @endforeach
-    </ul>
-    @endif
+    <header>
+        <nav>
+            <ul>
+                @foreach($listNavLink as $navLink)
+                    <li><a href="{{ $navLink["link"] }}">{{ $navLink["title"] }}</a></li>
+                @endforeach
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Hello World!</h1>
+        @if(count($heroesList))
+        <h3>{{ $name }} {{ $surname }}</h3>
+        <ul>
+            @foreach($heroesList as $hero)
+                <li>{{ $hero }}</li>
+            @endforeach
+        </ul>
+        @endif
+    </main>
 </body>
 </html>
