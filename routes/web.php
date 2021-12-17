@@ -14,5 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view("home");
+    $data = [
+        "name" => "Eroe",
+        "surname" => "Marvel",
+        "heroesList" => [
+            "Spider-Man",
+            "Iron-Man",
+            "Hulk",
+            "Captain America"
+        ]
+    ];
+
+    return view("home", $data);
 });
