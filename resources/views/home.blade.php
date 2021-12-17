@@ -8,11 +8,13 @@
 </head>
 <body>
     <h1>Hello World!</h1>
+    @if(count($heroesList))
     <h3>{{ $name }} {{ $surname }}</h3>
     <ul>
         @foreach($heroesList as $hero)
             <li>{{ $hero }}</li>
         @endforeach
     </ul>
+    @endif
 </body>
 </html>
